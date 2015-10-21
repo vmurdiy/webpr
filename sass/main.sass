@@ -22,6 +22,7 @@ body
 .container-hero
 	a
 		color: #fff
+		font-weight: normal
 
 .menu-top
 	padding: 0 82px 0 444px
@@ -174,8 +175,11 @@ form
 	background: url(../img/eclipse.png) no-repeat center center 
 
 /* Content */
-.container-content
+.container-content-top
 	padding-top: 11px
+	display: block
+	.row
+		margin: 0
 
 .menu-left
 	float: left
@@ -255,9 +259,11 @@ ul.heading-center
 
 .button
 	width: 100px
-	margin: 5px 0 0 360px
+	// margin: 5px 0 0 360px
+	margin: 5px auto 0 auto
 	.left-btn
 		display: inline-block
+		margin-left: 15px
 		margin-right: 19px
 		width: 25px
 		height: 26px
@@ -280,28 +286,42 @@ ul.heading-center
 	a:nth-child(2)
 		img
 			margin-bottom: 30px
+	a:last-child
+		img
+			margin-bottom: 0		
 
-.product
-	margin-top: 14px 0 0 43px
+.content-menu
+	margin: 14px 0 0 43px
 	a
-		text-align: center
 		font-size: 18px
 		padding-top: 170px
 		display: inline-block
+		padding-left: 20px
 		margin: 0 18px 18px 0
 		width: 161px
 		height: 192px
+		+kerning(1.6)
 		&:nth-child(2)
 			margin-right: 17px
+			padding-left: 25px
 		&:nth-child(3)
 			margin-right: 15px
+			padding-left: 9px
+			+kerning(1.2)
 		&:nth-child(4)
 			margin-right: 13px
+			padding-left: 5px
+			+kerning(1.1)
 		&:nth-child(5)
 			margin-left: 3px
-			margin-right: 16px	
+			margin-right: 16px
+			margin-bottom: 0	
+			padding-top: 172px
+			padding-left: 17px
 		&:last-child
 			margin-right: 0
+			padding-left: 17px
+			margin-bottom: 0	
 
 	.red
 		background: url(../img/product-1.jpg) no-repeat center top	
@@ -312,6 +332,266 @@ ul.heading-center
 	.green-3	
 		background: url(../img/product-4.jpg) no-repeat center top	
 
+.container-content-bottom
+	padding-top: 35px
+	padding-left: 85px
+	a
+		color: #7A7A7A
+	a.active,
+	a:hover
+		color: #3EA526
 
 
+.product-menu
+	height: 26px
+	position: relative
+	z-index: 1
+	h2
+		float: left
+		margin: 0
+		margin-top: 5px
+		display: inline-block
+		font-size: 18px
+		text-transform: uppercase
+		&:after
+			content: ""
+			height: 1px
+			margin-left: 15px
+			margin-top: 7px
+			position: absolute
+			width: 461px
+			background-color: #3EA526
+	.left-btn
+		display: inline-block
+		margin-right: 36px
+		margin-left: 498px
+		top: -5px
+		width: 25px
+		height: 26px
+		background: url(../img/left-btn.png) no-repeat center center
+	.right-btn
+		display: inline-block
+		width: 25px
+		height: 26px
+		background: url(../img/right-btn.png) no-repeat center center	
+	h3
+		display: inline-block
+		margin: 0
+		position: relative
+		top: -7px
+		font-size: 17px
+		margin-right: 32px
+		+kerning(.3)
+a:nth-child(4)
+	h3
+		margin-right: 37px
+a:nth-child(5)
+	h3
+		margin-right: 38px		
 
+
+.wrapper
+	padding-top: 28px
+	padding-left: 44px
+	.button
+		width: 100px
+		// margin: 5px 0 0 360px
+		margin: 31px auto 0 auto
+		.left-btn
+			display: inline-block
+			margin-left: -52px
+			margin-right: 19px
+			width: 25px
+			height: 26px
+			background: url(../img/left-btn.png) no-repeat center center
+		.right-btn
+			display: inline-block
+			width: 25px
+			height: 26px
+			background: url(../img/right-btn.png) no-repeat center center
+	.view
+		float: right
+		margin: 0
+		margin-top: -33px
+		margin-right: 83px
+		border-radius: 5px	
+		border: 1px solid #3DA529
+		color: #3DA529 
+		padding: 6px 15px 4px 11px
+
+.product
+	margin-right: 18px
+	padding-top: 206px
+	float: left
+	position: relative
+	display: inline-block
+	width: 222px
+	border: 1px solid #DFDFDF
+	background: url(../img/prod-img.jpg) no-repeat left 72px top 46px
+	.description
+		+kerning(0.7)
+		text-align: center
+		text-transform: uppercase
+		font-size: 14px	
+		margin: 0
+	.name
+		+kerning(0.7)
+		margin: 0
+		margin-left: 52.5px
+		margin-top: -1px
+	.price
+		font-size: 20px
+		position: relative
+		color: #67a623
+		font-weight: bold
+		display: inline-block
+		margin: 0
+		margin-top: 8px
+		margin-left: 68px
+	.buy
+		font-size: 14px
+		margin-left: 59px
+		margin-top: 11px
+		color: #fff
+		display: inline-block
+		text-transform: uppercase
+		border-radius: 5px
+		padding: 7px 20px 4px 23px
+		background: #3EA526
+	.buy:hover
+		color: #fff	
+		transform: scale(1.1)
+		background: #69C14B	
+	.desc
+		margin: 0
+		+kerning(.5)
+		margin-left: 60px	
+		margin-top: 5px	
+	.reviews
+		margin: 0
+		+kerning(0.3)
+		margin-left: 76px	
+		margin-top: 24px		
+	.stars-rew
+		display: inline-block
+		margin-left: 68px
+		margin-bottom: 22px
+		.star,
+		.star-2
+			display: inline-block
+			width: 14px
+			height: 13px
+			margin-right: -1px
+		.star
+			background: url(../img/star.png) no-repeat center center
+		.star-2
+			background: url(../img/star-2.png) no-repeat center center
+	.new 
+		display: inline-block
+		position: absolute
+		top: 6px
+		left: 0
+		width: 40px
+		height: 20px
+		background: url(../img/new.png) no-repeat center center	
+	.scales-2	
+		display: inline-block
+		position: absolute
+		top: 4px
+		right: 42px
+		width: 23px
+		height: 20px
+		background: url(../img/scales.png) no-repeat center center
+	.heart-2	
+		display: inline-block
+		position: absolute
+		top: 6px
+		right: 10px
+		width: 23px
+		height: 19px
+		background: url(../img/heart-spline.png) no-repeat center top -19px
+	.heart-2:hover
+		background: url(../img/heart-spline.png) no-repeat center top 0px		
+
+.feature
+	display: none
+	font-size: 11px
+	+kerning(0)
+	&:before
+		content: ""
+		height: 1px
+		margin-left: 20px
+		margin-top: 0px
+		position: absolute
+		width: 180px
+		background: #DDDDDD
+	p
+		margin: 0
+		margin-top: 10px
+		margin-left: 20px
+	ul
+		list-style-image: url(../img/list-style.png)
+		list-style-position: inside
+		font-size: 11px
+		padding: 0
+		margin: 0
+		margin-top: 2px
+		margin-left: 18px
+		+kerning(0.4)
+	a
+		text-align: right
+		text-decoration: underline
+		color: #35a800
+		p
+			margin: 0
+			margin-top: 5px
+			+kerning(0.2)		
+
+.product:hover > .feature	
+	display: inline-block
+
+#content-bottom-2
+	.container-content-bottom
+		padding-top: 23px
+		padding-left: 85px
+		h2
+			&:after
+				width: 537px
+		.left-btn
+			margin-left: 573px
+	.wrapper
+		padding-top: 28px
+		padding-left: 44px
+		.button
+			margin: 37px auto 0 auto
+			.left-btn
+				margin-left: -52px
+				margin-right: 19px
+		.view
+			margin: 0
+			margin-top: -40px
+			margin-right: 83px
+			
+#content-bottom-3
+	.container-content-bottom
+		padding-top: 12px
+		padding-left: 84px
+		h2
+			&:after
+				width: 1023px
+		.left-btn
+			margin-left: 573px
+	.wrapper
+		padding-top: 28px
+		padding-left: 44px
+		.button
+			margin: 31px auto 0 auto
+			.left-btn
+				margin-left: -52px
+				margin-right: 19px
+		.view
+			margin: 0
+			margin-top: -36px
+			margin-right: 83px
+
+		
