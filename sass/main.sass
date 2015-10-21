@@ -2,16 +2,13 @@
 
 @mixin kerning($kerning)
 	letter-spacing: $kerning + px
-@mixin gap($gap)
-	word-spacing: $gap + px
-
+	
 body 
 	font-family: "Glober", sans-serif
 	font-weight: normal
 	font-size: 12px
-	min-width: 920px
+	min-width: 1020px
 	max-width: 1440px
-	height: 5000px
 	margin: 0 auto
 	position: relative
 	-webkit-font-smoothing: antialised
@@ -38,7 +35,7 @@ body
 			margin-right: 35px
 			margin-top: 6px
 			&:last-child
-				margin-right: 0	
+				margin-right: 85px
 
 .personal-area
 	float: right
@@ -226,6 +223,7 @@ form
 	float: left
 	width: 788px
 	margin-left: 40px
+	margin-right: 40px
 	a
 		color: #7A7A7A
 
@@ -668,18 +666,18 @@ a:nth-child(5)
 			width: 1274px
 			bottom: 0	
 			background: url(../img/opacity.png) no-repeat center center
-		.view
-			display: inline-block
-			position: relative
-			z-index: 3
-			float: right
-			margin: 0
-			margin-top: -29px
-			margin-right: 0
-			border-radius: 5px	
-			border: 1px solid #3DA529
-			color: #3DA529 
-			padding: 6px 6px 4px 11px	
+	.view
+		display: inline-block
+		position: relative
+		z-index: 3
+		float: right
+		margin: 0
+		margin-top: -29px
+		margin-right: 83px
+		border-radius: 5px	
+		border: 1px solid #3DA529
+		color: #3DA529 
+		padding: 6px 6px 4px 11px	
 	
 footer
 	padding-top: 17px
@@ -742,9 +740,10 @@ footer
 
 .block-3
 	float: left
-	margin-left: 160px
+	margin-left: 200px
 	ul
 		margin: 0
+		padding: 0
 		list-style: none
 		li
 			margin-bottom: 15px

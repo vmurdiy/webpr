@@ -2,9 +2,8 @@ body {
   font-family: "Glober", sans-serif;
   font-weight: normal;
   font-size: 12px;
-  min-width: 920px;
+  min-width: 1020px;
   max-width: 1440px;
-  height: 5000px;
   margin: 0 auto;
   position: relative;
   -webkit-font-smoothing: antialised;
@@ -34,7 +33,7 @@ body {
   margin-top: 6px;
 }
 .menu-top ul li:last-child {
-  margin-right: 0;
+  margin-right: 85px;
 }
 
 .personal-area {
@@ -256,6 +255,7 @@ form .submit {
   float: left;
   width: 788px;
   margin-left: 40px;
+  margin-right: 40px;
 }
 .center-content a {
   color: #7A7A7A;
@@ -782,14 +782,14 @@ a:nth-child(5) h3 {
   bottom: 0;
   background: url(../img/opacity.png) no-repeat center center;
 }
-#about .about-wrapper .view {
+#about .view {
   display: inline-block;
   position: relative;
   z-index: 3;
   float: right;
   margin: 0;
   margin-top: -29px;
-  margin-right: 0;
+  margin-right: 83px;
   border-radius: 5px;
   border: 1px solid #3DA529;
   color: #3DA529;
@@ -867,10 +867,11 @@ footer {
 
 .block-3 {
   float: left;
-  margin-left: 160px;
+  margin-left: 200px;
 }
 .block-3 ul {
   margin: 0;
+  padding: 0;
   list-style: none;
 }
 .block-3 ul li {
